@@ -1,8 +1,10 @@
 {
   "name": "vcf-format-angular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "bin": "./lib/index.js",
+  "bin": {
+    "vcf-format-angular": "lib/index.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
@@ -19,7 +21,9 @@
     "type": "git",
     "url": "git+https://github.com/vinferno/vcf-format-angular.git"
   },
-  "keywords": ["Angular-Reformat"],
+  "keywords": [
+    "Angular-Reformat"
+  ],
   "author": "VinsonF",
   "license": "ISC",
   "bugs": {
