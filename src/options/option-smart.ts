@@ -8,9 +8,10 @@ export function smart(args: any) {
   switch (args[1]) {
     case '--test':
       console.log('This is just a test.');
-      return;
+      return args;
     default:
       console.log('please select a smart component path');
       console.log(fs.readdirSync('./'));
+      return args;
   }
 }

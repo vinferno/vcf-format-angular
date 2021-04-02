@@ -6,9 +6,10 @@ export function help(args: any) {
   switch (args[1]) {
     case '--test':
       console.log('This is just a test.');
-      return;
+      return args;
     default:
       console.log('please select a help topic');
       console.log(JSON.stringify(options, null, 4));
+      return args;
   }
 }
