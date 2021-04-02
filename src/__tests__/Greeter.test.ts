@@ -1,4 +1,5 @@
-import { cli } from '../index';
+import { cli } from '../cli';
+
 test('My Greeter', () => {
-  expect(cli('Carl')).toBe('Hello Carl');
+  expect(cli('Carl')).toBe('Carl');
 });
