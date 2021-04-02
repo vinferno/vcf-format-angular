@@ -1,5 +1,5 @@
 import { cli } from '../cli';
 
-test('My Greeter', () => {
+test('My CLI', () => {
   expect(cli('Carl')).toBe('Carl');
 });

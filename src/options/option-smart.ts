@@ -1,4 +1,6 @@
-export function help(args: any) {
+import * as fs from 'fs';
+
+export function smart(args: any) {
   const options = {
     '--test': '--help --test',
   };
@@ -8,7 +10,7 @@ export function help(args: any) {
       console.log('This is just a test.');
       return;
     default:
-      console.log('please select a help topic');
-      console.log(JSON.stringify(options, null, 4));
+      console.log('please select a smart component path');
+      console.log(fs.readdirSync('./'));
   }
 }
