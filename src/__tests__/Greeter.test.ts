@@ -1,4 +1,4 @@
-import { Greeter } from '../index';
+import { cli } from '../index';
 test('My Greeter', () => {
-  expect(Greeter('Carl')).toBe('Hello Carl');
+  expect(cli('Carl')).toBe('Hello Carl');
 });
